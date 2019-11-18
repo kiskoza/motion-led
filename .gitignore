@@ -1,0 +1,11 @@
+# Ignore sensitive data
+.env
+
+# Ignore logs
+*.log
+
+# Ignore builds
+*.gch
+.pio/
+dist/
+node_modules/

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <!-- Keep this script tag to include javascript -->
+  <% for (var jsFile in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[jsFile] %>"></script>
+  <% } %>
+</head>
+<body>
+  <!-- Add content here -->
+   <p>Something went wrong:</p>
+   <ul>
+     <li>URI: %URI%</li>
+     <li>Method: %METHOD%</li>
+     <li>Arguments: %ARGS%</li>
+   </ul>
+</body>
+</html>
