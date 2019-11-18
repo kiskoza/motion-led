@@ -1,6 +1,6 @@
-# ESP8266 Webpack Template
+# ESP8266 Motion Led
 
-If it works, it ain't stupid
+Turn on / off a led strip with a motion detector.
 
 ## Getting Started
 
