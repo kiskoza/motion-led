@@ -1,5 +1,10 @@
+# Caches
 fp-info-cache
-*.sch-bak
 motion-led-cache.lib
+
+# Generated files
 *.net
 
+# Backup files
+*.sch-bak
+*.kicad_pcb-bak
