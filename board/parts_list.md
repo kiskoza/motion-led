@@ -6,8 +6,8 @@ ESP32 based Wemos D1 mini board
 
 ### 2. ICs:
 
- - transistors: 2N7002
-	- datasheet: https://www.onsemi.com/pdf/datasheet/nds7002a-d.pdf 
+ - transistors: IRLZ24N
+	- datasheet: https://www.hestore.hu/prod_getfile.php?id=3876 
  - Voltage regulator: LF33CV
 	- datasheet: https://www.hestore.hu/prod_getfile.php?id=7019
 
