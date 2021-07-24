@@ -16,17 +16,6 @@ $EndDescr
 Wire Wire Line
 	6100 1000 7000 1000
 $Comp
-L Transistor_FET:2N7002 Q0
-U 1 1 5F5FE821
-P 6000 1200
-F 0 "Q0" H 6204 1246 50  0000 L CNN
-F 1 "2N7002" H 6204 1155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 1125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6000 1200 50  0001 L CNN
-	1    6000 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x04_Female J2
 U 1 1 5F7EC711
 P 7500 1250
@@ -35,28 +24,6 @@ F 1 "LED PINs" H 7528 1135 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7500 1250 50  0001 C CNN
 F 3 "~" H 7500 1250 50  0001 C CNN
 	1    7500 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7002 Q1
-U 1 1 5F57E485
-P 6450 1550
-F 0 "Q1" H 6654 1596 50  0000 L CNN
-F 1 "2N7002" H 6654 1505 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6650 1475 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6450 1550 50  0001 L CNN
-	1    6450 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7002 Q2
-U 1 1 5F57F83B
-P 6900 1900
-F 0 "Q2" H 7104 1946 50  0000 L CNN
-F 1 "2N7002" H 7104 1855 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 1825 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6900 1900 50  0001 L CNN
-	1    6900 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -574,4 +541,37 @@ Text Notes 3350 1700 0    50   ~ 0
 sensor input
 Text Notes 7500 2650 0    50   ~ 0
 LED driver
+$Comp
+L Transistor_FET:IRLZ34N Q1
+U 1 1 60FC46DE
+P 6000 1200
+F 0 "Q1" H 6204 1246 50  0000 L CNN
+F 1 "IRLZ34N" H 6204 1155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6250 1125 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720" H 6000 1200 50  0001 L CNN
+	1    6000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRLZ34N Q2
+U 1 1 60FC4B94
+P 6450 1550
+F 0 "Q2" H 6654 1596 50  0000 L CNN
+F 1 "IRLZ34N" H 6654 1505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6700 1475 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720" H 6450 1550 50  0001 L CNN
+	1    6450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRLZ34N Q3
+U 1 1 60FC5104
+P 6900 1900
+F 0 "Q3" H 7104 1946 50  0000 L CNN
+F 1 "IRLZ34N" H 7104 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7150 1825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720" H 6900 1900 50  0001 L CNN
+	1    6900 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
