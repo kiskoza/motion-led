@@ -83,41 +83,40 @@ $EndComp
 Wire Wire Line
 	7200 1150 7300 1150
 Wire Wire Line
-	6000 3650 6000 3500
+	2950 2250 2950 2100
 $Comp
 L power:GND #PWR0103
 U 1 1 5F7D9E5D
-P 6000 3650
-F 0 "#PWR0103" H 6000 3400 50  0001 C CNN
-F 1 "GND" H 6005 3477 50  0000 C CNN
-F 2 "" H 6000 3650 50  0001 C CNN
-F 3 "" H 6000 3650 50  0001 C CNN
-	1    6000 3650
+P 2950 2250
+F 0 "#PWR0103" H 2950 2000 50  0001 C CNN
+F 1 "GND" H 2955 2077 50  0000 C CNN
+F 2 "" H 2950 2250 50  0001 C CNN
+F 3 "" H 2950 2250 50  0001 C CNN
+	1    2950 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F7D6A51
-P 6000 3500
-F 0 "#FLG0101" H 6000 3575 50  0001 C CNN
-F 1 "PWR_FLAG" H 6000 3673 50  0000 C CNN
-F 2 "" H 6000 3500 50  0001 C CNN
-F 3 "~" H 6000 3500 50  0001 C CNN
-	1    6000 3500
+P 2950 2100
+F 0 "#FLG0101" H 2950 2175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2950 2273 50  0000 C CNN
+F 2 "" H 2950 2100 50  0001 C CNN
+F 3 "~" H 2950 2100 50  0001 C CNN
+	1    2950 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Barrel_Jack J0
 U 1 1 5F7DD1C2
-P 1300 3550
-F 0 "J0" H 1070 3600 50  0000 R CNN
-F 1 "Barrel_Jack" H 1070 3509 50  0000 R CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1350 3510 50  0001 C CNN
-F 3 "~" H 1350 3510 50  0001 C CNN
-	1    1300 3550
+P 1300 3600
+F 0 "J0" H 1070 3650 50  0000 R CNN
+F 1 "Barrel_Jack" H 1070 3559 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1350 3560 50  0001 C CNN
+F 3 "~" H 1350 3560 50  0001 C CNN
+	1    1300 3600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1100 950 
 $Comp
 L Connector:Conn_01x03_Female J1
 U 1 1 5F7A0FED
@@ -134,7 +133,7 @@ L MCU_Module:WeMos_D1_mini U0
 U 1 1 5F57A26F
 P 1200 1750
 F 0 "U0" H 1450 1000 50  0000 C CNN
-F 1 "WeMos_D1_mini" H 1600 2500 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 1650 2500 50  0000 C CNN
 F 2 "Module:WEMOS_D1_mini_light" H 1200 600 50  0001 C CNN
 F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H -650 600 50  0001 C CNN
 	1    1200 1750
@@ -159,17 +158,6 @@ Text Label 3250 1400 0    50   ~ 0
 esp_analog_in
 Wire Wire Line
 	3100 1250 3650 1250
-$Comp
-L power:+3V3 #PWR03
-U 1 1 60FDED99
-P 3650 1250
-F 0 "#PWR03" H 3650 1100 50  0001 C CNN
-F 1 "+3V3" H 3665 1423 50  0000 C CNN
-F 2 "" H 3650 1250 50  0001 C CNN
-F 3 "" H 3650 1250 50  0001 C CNN
-	1    3650 1250
-	1    0    0    -1  
-$EndComp
 Text Label 1600 1250 0    50   ~ 0
 esp_analog_in
 $Comp
@@ -191,19 +179,6 @@ Text Label 1600 1650 0    50   ~ 0
 esp_digital_BLUE
 Text Label 1600 1550 0    50   ~ 0
 esp_digital_GREEN
-$Comp
-L power:+3V3 #PWR01
-U 1 1 60FF1F92
-P 1300 800
-F 0 "#PWR01" H 1300 650 50  0001 C CNN
-F 1 "+3V3" H 1315 973 50  0000 C CNN
-F 2 "" H 1300 800 50  0001 C CNN
-F 3 "" H 1300 800 50  0001 C CNN
-	1    1300 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 800  1300 950 
 $Comp
 L power:GND #PWR08
 U 1 1 6103A814
@@ -246,53 +221,29 @@ Wire Wire Line
 Wire Wire Line
 	7200 1150 7200 900 
 $Comp
-L power:+3V3 #PWR012
-U 1 1 6105B9F6
-P 6350 3500
-F 0 "#PWR012" H 6350 3350 50  0001 C CNN
-F 1 "+3V3" H 6365 3673 50  0000 C CNN
-F 2 "" H 6350 3500 50  0001 C CNN
-F 3 "" H 6350 3500 50  0001 C CNN
-	1    6350 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR014
 U 1 1 6105C247
-P 6350 3850
-F 0 "#PWR014" H 6350 3700 50  0001 C CNN
-F 1 "+12V" H 6365 4023 50  0000 C CNN
-F 2 "" H 6350 3850 50  0001 C CNN
-F 3 "" H 6350 3850 50  0001 C CNN
-	1    6350 3850
+P 3300 2450
+F 0 "#PWR014" H 3300 2300 50  0001 C CNN
+F 1 "+12V" H 3315 2623 50  0000 C CNN
+F 2 "" H 3300 2450 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 6105CB2E
-P 6750 3850
-F 0 "#FLG02" H 6750 3925 50  0001 C CNN
-F 1 "PWR_FLAG" H 6750 4023 50  0000 C CNN
-F 2 "" H 6750 3850 50  0001 C CNN
-F 3 "~" H 6750 3850 50  0001 C CNN
-	1    6750 3850
+P 3700 2450
+F 0 "#FLG02" H 3700 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3700 2623 50  0000 C CNN
+F 2 "" H 3700 2450 50  0001 C CNN
+F 3 "~" H 3700 2450 50  0001 C CNN
+	1    3700 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 3850 6350 3850
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 610655DC
-P 6750 3500
-F 0 "#FLG01" H 6750 3575 50  0001 C CNN
-F 1 "PWR_FLAG" H 6750 3673 50  0000 C CNN
-F 2 "" H 6750 3500 50  0001 C CNN
-F 3 "~" H 6750 3500 50  0001 C CNN
-	1    6750 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 3500 6350 3500
+	3700 2450 3300 2450
 Wire Wire Line
 	3000 1400 3000 1250
 Wire Wire Line
@@ -388,115 +339,6 @@ Connection ~ 5250 1550
 Wire Wire Line
 	5250 1000 5000 1000
 Connection ~ 5250 1000
-$Comp
-L power:+12V #PWR010
-U 1 1 610E8100
-P 2200 3450
-F 0 "#PWR010" H 2200 3300 50  0001 C CNN
-F 1 "+12V" H 2215 3623 50  0000 C CNN
-F 2 "" H 2200 3450 50  0001 C CNN
-F 3 "" H 2200 3450 50  0001 C CNN
-	1    2200 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 610E8CC6
-P 2800 3850
-F 0 "#PWR013" H 2800 3600 50  0001 C CNN
-F 1 "GND" H 2805 3677 50  0000 C CNN
-F 2 "" H 2800 3850 50  0001 C CNN
-F 3 "" H 2800 3850 50  0001 C CNN
-	1    2800 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LF33_TO220 U1
-U 1 1 60FC6BF5
-P 2800 3450
-F 0 "U1" H 3000 3200 50  0000 C CNN
-F 1 "LF33_TO220" H 2800 3600 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2800 3675 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf" H 2800 3400 50  0001 C CNN
-	1    2800 3450
-	1    0    0    -1  
-$EndComp
-Connection ~ 2200 3450
-$Comp
-L Device:C C2
-U 1 1 60FCBBB0
-P 3300 3600
-F 0 "C2" H 3415 3646 50  0000 L CNN
-F 1 "2.2u" H 3415 3555 50  0000 L CNN
-F 2 "" H 3338 3450 50  0001 C CNN
-F 3 "~" H 3300 3600 50  0001 C CNN
-	1    3300 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 3450 3300 3450
-Wire Wire Line
-	2500 3450 2200 3450
-$Comp
-L Device:C C1
-U 1 1 60FCAAFF
-P 2200 3600
-F 0 "C1" H 2315 3646 50  0000 L CNN
-F 1 "100n" H 2315 3555 50  0000 L CNN
-F 2 "" H 2238 3450 50  0001 C CNN
-F 3 "~" H 2200 3600 50  0001 C CNN
-	1    2200 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 3750 2800 3750
-Connection ~ 2800 3750
-Wire Wire Line
-	2800 3750 3300 3750
-Wire Wire Line
-	2200 3750 1600 3750
-Wire Wire Line
-	1600 3750 1600 3650
-Connection ~ 2200 3750
-Wire Wire Line
-	2800 3850 2800 3750
-Text Notes 3450 3750 0    50   ~ 0
-Electrolytic
-$Comp
-L power:+3V3 #PWR011
-U 1 1 60FE1B3A
-P 3300 3450
-F 0 "#PWR011" H 3300 3300 50  0001 C CNN
-F 1 "+3V3" H 3315 3623 50  0000 C CNN
-F 2 "" H 3300 3450 50  0001 C CNN
-F 3 "" H 3300 3450 50  0001 C CNN
-	1    3300 3450
-	1    0    0    -1  
-$EndComp
-Connection ~ 3300 3450
-$Comp
-L Device:D_Schottky D1
-U 1 1 60FEA7D2
-P 1850 3450
-F 0 "D1" H 1850 3233 50  0000 C CNN
-F 1 "D_Schottky" H 1850 3324 50  0000 C CNN
-F 2 "" H 1850 3450 50  0001 C CNN
-F 3 "~" H 1850 3450 50  0001 C CNN
-	1    1850 3450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1700 3450 1600 3450
-Wire Wire Line
-	2000 3450 2200 3450
-Wire Notes Line
-	4000 3050 4000 4150
-Wire Notes Line
-	4000 4150 600  4150
-Wire Notes Line
-	600  4150 600  3050
-Wire Notes Line
-	600  3050 4000 3050
 Wire Notes Line
 	600  2950 600  550 
 Wire Notes Line
@@ -524,18 +366,16 @@ Wire Wire Line
 Wire Notes Line
 	7900 550  4300 550 
 Wire Notes Line
-	5750 3200 7000 3200
+	2700 1800 3950 1800
 Wire Notes Line
-	7000 3200 7000 4000
+	3950 1800 3950 2600
 Wire Notes Line
-	7000 4000 5750 4000
+	3950 2600 2700 2600
 Wire Notes Line
-	5750 4000 5750 3200
+	2700 2600 2700 1800
 Text Notes 1400 2950 0    50   ~ 0
 Wemos D1 mini controller
-Text Notes 3450 4150 0    50   ~ 0
-Power supply
-Text Notes 6600 4000 0    50   ~ 0
+Text Notes 3550 2600 0    50   ~ 0
 PWR flags\n
 Text Notes 3350 1700 0    50   ~ 0
 sensor input
@@ -574,4 +414,140 @@ F 3 "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a401535672
 	1    6900 1900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Linear:L7805 U1
+U 1 1 61007AFC
+P 2800 3500
+F 0 "U1" H 2800 3742 50  0000 C CNN
+F 1 "L7805" H 2800 3651 50  0000 C CNN
+F 2 "" H 2825 3350 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 2800 3450 50  0001 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 6100EB3A
+P 2200 3500
+F 0 "#PWR0101" H 2200 3350 50  0001 C CNN
+F 1 "+12V" H 2215 3673 50  0000 C CNN
+F 2 "" H 2200 3500 50  0001 C CNN
+F 3 "" H 2200 3500 50  0001 C CNN
+	1    2200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6100EB40
+P 2800 3900
+F 0 "#PWR0102" H 2800 3650 50  0001 C CNN
+F 1 "GND" H 2805 3727 50  0000 C CNN
+F 2 "" H 2800 3900 50  0001 C CNN
+F 3 "" H 2800 3900 50  0001 C CNN
+	1    2800 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 3500
+$Comp
+L Device:C C2
+U 1 1 6100EB4D
+P 3300 3650
+F 0 "C2" H 3415 3696 50  0000 L CNN
+F 1 "100n" H 3415 3605 50  0000 L CNN
+F 2 "" H 3338 3500 50  0001 C CNN
+F 3 "~" H 3300 3650 50  0001 C CNN
+	1    3300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3500 3300 3500
+Wire Wire Line
+	2500 3500 2200 3500
+$Comp
+L Device:C C1
+U 1 1 6100EB55
+P 2200 3650
+F 0 "C1" H 2315 3696 50  0000 L CNN
+F 1 "330n" H 2315 3605 50  0000 L CNN
+F 2 "" H 2238 3500 50  0001 C CNN
+F 3 "~" H 2200 3650 50  0001 C CNN
+	1    2200 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3800 2800 3800
+Connection ~ 2800 3800
+Wire Wire Line
+	2800 3800 3300 3800
+Wire Wire Line
+	2200 3800 1600 3800
+Wire Wire Line
+	1600 3800 1600 3700
+Connection ~ 2200 3800
+Wire Wire Line
+	2800 3900 2800 3800
+$Comp
+L Device:D_Schottky D1
+U 1 1 6100EB6A
+P 1850 3500
+F 0 "D1" H 1850 3283 50  0000 C CNN
+F 1 "D_Schottky" H 1850 3374 50  0000 C CNN
+F 2 "" H 1850 3500 50  0001 C CNN
+F 3 "~" H 1850 3500 50  0001 C CNN
+	1    1850 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 3500 1600 3500
+Wire Wire Line
+	2000 3500 2200 3500
+Wire Notes Line
+	4000 3100 4000 4200
+Wire Notes Line
+	4000 4200 600  4200
+Wire Notes Line
+	600  4200 600  3100
+Wire Notes Line
+	600  3100 4000 3100
+Text Notes 3450 4200 0    50   ~ 0
+Power supply
+$Comp
+L power:+5V #PWR0104
+U 1 1 6101F82A
+P 3300 3500
+F 0 "#PWR0104" H 3300 3350 50  0001 C CNN
+F 1 "+5V" H 3315 3673 50  0000 C CNN
+F 2 "" H 3300 3500 50  0001 C CNN
+F 3 "" H 3300 3500 50  0001 C CNN
+	1    3300 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 3500
+$Comp
+L power:+5V #PWR0105
+U 1 1 610211EB
+P 1100 850
+F 0 "#PWR0105" H 1100 700 50  0001 C CNN
+F 1 "+5V" H 1115 1023 50  0000 C CNN
+F 2 "" H 1100 850 50  0001 C CNN
+F 3 "" H 1100 850 50  0001 C CNN
+	1    1100 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 850  1100 950 
+NoConn ~ 1300 950 
+$Comp
+L power:+5V #PWR0106
+U 1 1 6105E4B2
+P 3650 1150
+F 0 "#PWR0106" H 3650 1000 50  0001 C CNN
+F 1 "+5V" H 3665 1323 50  0000 C CNN
+F 2 "" H 3650 1150 50  0001 C CNN
+F 3 "" H 3650 1150 50  0001 C CNN
+	1    3650 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1250 3650 1150
 $EndSCHEMATC
