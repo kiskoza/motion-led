@@ -579,4 +579,163 @@ Wire Notes Line
 	600  3100 4150 3100
 Wire Notes Line
 	600  4200 4150 4200
+$Comp
+L Regulator_Switching:LM2574HVM-5 U?
+U 1 1 61454CFE
+P 2700 4850
+F 0 "U?" H 2700 5217 50  0000 C CNN
+F 1 "LM2574HVM-5" H 2700 5126 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 2300 5200 50  0001 L CIN
+F 3 "http://www.national.com/ds/LM/LM2574.pdf" H 2700 4850 50  0001 C CNN
+	1    2700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 61456C9F
+P 3500 4950
+F 0 "L?" V 3450 4900 50  0000 C CNN
+F 1 "L" V 3599 4950 50  0000 C CNN
+F 2 "" H 3500 4950 50  0001 C CNN
+F 3 "~" H 3500 4950 50  0001 C CNN
+	1    3500 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 6145ED33
+P 1300 4850
+F 0 "J?" H 1070 4900 50  0000 R CNN
+F 1 "Barrel_Jack" H 1070 4809 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1350 4810 50  0001 C CNN
+F 3 "~" H 1350 4810 50  0001 C CNN
+	1    1300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 6145ED3B
+P 1750 4750
+F 0 "D?" H 1750 4533 50  0000 C CNN
+F 1 "D_Schottky" H 1750 4624 50  0000 C CNN
+F 2 "" H 1750 4750 50  0001 C CNN
+F 3 "~" H 1750 4750 50  0001 C CNN
+	1    1750 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 4950 3300 4950
+$Comp
+L Device:D_Schottky D?
+U 1 1 61474EE8
+P 3300 5100
+F 0 "D?" V 3254 5180 50  0000 L CNN
+F 1 "D_Schottky" V 3400 5100 50  0000 L CNN
+F 2 "" H 3300 5100 50  0001 C CNN
+F 3 "~" H 3300 5100 50  0001 C CNN
+	1    3300 5100
+	0    1    1    0   
+$EndComp
+Connection ~ 3300 4950
+Wire Wire Line
+	3300 4950 3200 4950
+Wire Wire Line
+	3300 5250 2800 5250
+Wire Wire Line
+	1600 5250 1600 4950
+Wire Wire Line
+	2200 4950 2200 5250
+Connection ~ 2200 5250
+Wire Wire Line
+	2200 5250 2000 5250
+Wire Wire Line
+	2700 5150 2700 5250
+Connection ~ 2700 5250
+Wire Wire Line
+	2700 5250 2450 5250
+Wire Wire Line
+	2800 5150 2800 5250
+Connection ~ 2800 5250
+Wire Wire Line
+	2800 5250 2700 5250
+Wire Wire Line
+	3650 4950 3650 4750
+Wire Wire Line
+	3200 4750 3650 4750
+$Comp
+L Device:C C?
+U 1 1 61480A9F
+P 2000 4900
+F 0 "C?" H 2115 4946 50  0000 L CNN
+F 1 "22u" H 2115 4855 50  0000 L CNN
+F 2 "" H 2038 4750 50  0001 C CNN
+F 3 "~" H 2000 4900 50  0001 C CNN
+	1    2000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4750 2000 4750
+Wire Wire Line
+	2000 4750 2200 4750
+Connection ~ 2000 4750
+Wire Wire Line
+	2000 5050 2000 5250
+Connection ~ 2000 5250
+Wire Wire Line
+	2000 5250 1600 5250
+$Comp
+L power:GND #PWR?
+U 1 1 6148BC76
+P 2450 5250
+F 0 "#PWR?" H 2450 5000 50  0001 C CNN
+F 1 "GND" H 2455 5077 50  0000 C CNN
+F 2 "" H 2450 5250 50  0001 C CNN
+F 3 "" H 2450 5250 50  0001 C CNN
+	1    2450 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 5250
+Wire Wire Line
+	2450 5250 2200 5250
+$Comp
+L Device:C C?
+U 1 1 6148EDBC
+P 3750 5100
+F 0 "C?" H 3865 5146 50  0000 L CNN
+F 1 "220u" H 3865 5055 50  0000 L CNN
+F 2 "" H 3788 4950 50  0001 C CNN
+F 3 "~" H 3750 5100 50  0001 C CNN
+	1    3750 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5250 3750 5250
+Connection ~ 3300 5250
+Wire Wire Line
+	3650 4950 3750 4950
+Connection ~ 3650 4950
+$Comp
+L power:+5V #PWR?
+U 1 1 614951FD
+P 4000 4950
+F 0 "#PWR?" H 4000 4800 50  0001 C CNN
+F 1 "+5V" H 4015 5123 50  0000 C CNN
+F 2 "" H 4000 4950 50  0001 C CNN
+F 3 "" H 4000 4950 50  0001 C CNN
+	1    4000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4950 3750 4950
+Connection ~ 3750 4950
+Wire Notes Line
+	600  4450 4150 4450
+Wire Notes Line
+	4150 4450 4150 5500
+Wire Notes Line
+	4150 5500 600  5500
+Wire Notes Line
+	600  5500 600  4450
+Text Notes 3200 5500 0    50   ~ 0
+Power supply (efficient)
 $EndSCHEMATC
