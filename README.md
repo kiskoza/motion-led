@@ -68,7 +68,7 @@ yarn run deploy
 ## Built With
 
 * [asdf-vm](https://asdf-vm.com/) - For easy install
-* [KiCad EDA](https://kicad-pcb.org/) - For the hardware layout
+* [KiCad EDA](https://kicad.org/) - For the hardware layout
 * [PlatformIO](https://platformio.org/) - For the ESP module
 * [Webpack](https://webpack.js.org/) - For the web interface
 
